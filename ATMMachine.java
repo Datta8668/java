@@ -1,8 +1,7 @@
-
 import java.util.Scanner;
 
 class ATM{
-    
+
     float Balance;
     int PIN = 1234;
 
@@ -10,6 +9,7 @@ class ATM{
         System.out.println("Enter your pin:");
         Scanner sc = new Scanner(System.in);
         int enterpin = sc.nextInt();
+
         if (enterpin==PIN){
             menu();
         }
@@ -18,14 +18,13 @@ class ATM{
             checkpoint();
         }
     }
+
     public void menu(){
         System.out.println("Enter Your Choice:");
         System.out.println("1.Check A/C Balance:");
         System.out.println("Withdraw Money:");
         System.out.println("Deposite Money:");
         System.out.println("EXIT");
-
-
         Scanner sc = new Scanner (System.in);
         int opt = sc.nextInt(); 
 
@@ -64,6 +63,7 @@ class ATM{
         }
         menu();  
     }
+
     public void depositeMoney(){
         System.out.println("Enter Amount to Deposite: ");
         Scanner sc = new Scanner(System.in);
@@ -76,12 +76,7 @@ class ATM{
 
 public class ATMMachine{
     public static void main (String [] args){
-
-
         ATM obj = new ATM();
         obj.checkpoint();
-        
-
-
     }
 }
