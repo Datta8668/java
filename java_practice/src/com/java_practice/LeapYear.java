@@ -1,7 +1,10 @@
 package com.java_practice;
 import java.util.*;
+
 public class LeapYear {
+	
 	public static void main(String[] args) {
+		
 		Scanner sd = new Scanner (System.in);
 		System.out.println("Please Enter the year.");
 		int year = sd.nextInt();
