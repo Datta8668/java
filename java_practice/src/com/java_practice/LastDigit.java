@@ -12,7 +12,7 @@ public class LastDigit {
 		
 		int n = sd.nextInt();
 		
-		int d = n % 10;
+		int d = Math.abs(n % 10);
 		
 		System.out.println("The last digit of number is: "+d);
 		
